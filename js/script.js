@@ -19,6 +19,7 @@ $("#search-button").click(function(){
             let number = getRandomInt(0,response.data.length);
             console.log(response.data[number].images.original.url);
             $("#gif").html("<img src='"+response.data[number].images.original.url+"'>")
+            $(".text-center").hide();
         },
     })
 });
